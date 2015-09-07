@@ -1,5 +1,5 @@
 'use strict';
-describe('utilities',function(){
+describe('service',function(){
 beforeEach(module('service'));
 var utilities;
 beforeEach(inject(function(_utilities_){

@@ -8,12 +8,14 @@
  * Controller of the developmentApp
  */
 angular.module('developmentApp',['service'])
-  .controller('MainCtrl',['$scope',function ($scope,utilities) {
+  .controller('MainCtrl',['$scope','utilities',function ($scope,utilities) {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
-	$scope.test='hello';
+	$scope.test=utilities.hello();
+	
+	
 	
   }]);
